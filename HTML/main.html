@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Welcome, <span id="username">Loading...</span></h1>
+    <div class="card mt-4 p-4 shadow-sm">
+      <p class="mb-1"><strong>Email:</strong> <span id="email">Loading...</span></p>
+    </div>
+
+    <!-- Edit Username Form -->
+    <div class="card mt-4 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Edit Username</h5>
+        <form id="edit-username-form" action="" method="post">
+          <div class="mb-3">
+            <label for="new-username" class="form-label">New Username</label>
+            <input type="text" class="form-control" id="new-username" name="new_username" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Update Username</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Update Password Form -->
+    <div class="card mt-4 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Update Password</h5>
+        <form id="update-password-form" action="" method="post">
+          <div class="mb-3">
+            <label for="current-password" class="form-label">Current Password</label>
+            <input type="password" class="form-control" id="current-password" name="current_password" required />
+          </div>
+          <div class="mb-3">
+            <label for="new-password" class="form-label">New Password</label>
+            <input type="password" class="form-control" id="new-password" name="new_password" required />
+          </div>
+          <button type="submit" class="btn btn-success">Update Password</button>
+
+          <!-- Sign Out Button -->
+         
+        </form>
+      </div>
+    </div>
+     <button type="button" class="btn btn-danger mt-3" id="signout-button">Sign Out</button>
+  </div>
+
+  <!-- Your existing JS files -->
+  <script src="../java_script/load_user.js" type="module"></script>
+  <script src="../java_script/update_uname.js" type="module"></script>
+  <script src="../java_script/update_pass.js" type="module"></script>
+
+  <!-- Sign Out JS -->
+  <script src="../java_script/logout.js"></script>
+</body>
+</html>
