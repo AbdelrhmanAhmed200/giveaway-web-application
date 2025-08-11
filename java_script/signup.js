@@ -34,7 +34,7 @@ form.addEventListener("submit",function(event){
     .then(data=>{
         if (data.success) {
         alert("sign up successful!"); 
-         window.location.href = "http://localhost/mylistapp/HTML/index.html";
+         window.location.href = "http://localhost/mylistapp/index.html";
         }else{
              alert("sign up failed: " + data.message);
         }

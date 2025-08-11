@@ -8,7 +8,7 @@ document.getElementById('signout-button').addEventListener('click', () => {
     return response.text();
   })
       .then(() => {
-    window.location.replace('http://localhost/mylistapp/HTML/index.html');
+    window.location.replace('http://localhost/mylistapp/index.html');
       })
       .catch(console.error);
     });
