@@ -69,7 +69,10 @@
  <div class="card mt-4 shadow-sm">
   <div class="card-body d-flex align-items-center justify-content-between">
     <h5 class="card-title m-0">Current Participants</h5>
-    <button id="refresh-btn" class="btn btn-primary btn-sm">Refresh</button>
+    <div>
+      <button id="refresh-btn" class="btn btn-primary btn-sm me-2">Refresh</button>
+      <button id="delete-all-btn" class="btn btn-danger btn-sm">Delete All</button>
+    </div>
   </div>
   <ul id="participant-list" class="list-group">
     <li class="list-group-item">Loading...</li>
@@ -81,10 +84,11 @@
     Choose Winner
   </button>
 </div>
-
+<script src="../java_script/onload.js" type="module"></script>
 <script src="../java_script/load_user.js" type="module"></script>
 <script src="../java_script/giveaway_input.js"type="module"></script>
 <script src="../java_script/refresh.js"type="module"></script>
 <script src="../java_script/random_winner.js"></script>
+<script src="../java_script/delete-memmbers.js"type="module"></script>
 </body>
 </html>
