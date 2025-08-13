@@ -1,10 +1,12 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 header('Content-Type: application/json');
 session_start();
-$host = 'sql208.infinityfree.com';
-$db = 'if0_39684393_basic_login';
-$usr = 'if0_39684393';
-$pass = 'Sova2006425';
+$host = 'localhost';
+$db = 'basic_login';
+$usr = 'root';
+$pass = '';
 $connection = new mysqli($host,$usr,$pass,$db);
 if ($connection ->connect_error) {
     echo json_encode(['success'=>false,'message' => 'Database connection failed']);

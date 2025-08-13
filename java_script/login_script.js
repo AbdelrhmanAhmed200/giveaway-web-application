@@ -28,7 +28,7 @@ form.addEventListener("submit",function(event){
     .then(data=>{
         if (data.success) {
         alert("Login successful!"); 
-         window.location.href = "http://localhost/mylistapp/HTML/main.html";
+         window.location.href = "http://localhost/mylistapp/HTML/giveaway.html";
         }else{
              alert("Login failed: " + data.message);
         }

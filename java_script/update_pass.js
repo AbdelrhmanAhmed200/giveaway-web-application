@@ -28,7 +28,7 @@ form.addEventListener("submit",function(event){
     .then(data=>{
         if (data.success) {
             alert("new password set successful")
-            window.location.href="http://localhost/mylistapp/index.html";
+            window.location.href="../index.html";
             
         }else{
              alert("sign up failed: " + data.message);

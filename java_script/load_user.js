@@ -11,7 +11,7 @@ export var load_data = function load_data() {
             
         }else{
             alert("Not logged in!");
-            window.location.href = 'http://localhost/mylistapp/index.html';
+            window.location.href = '../index.html';
         }
     })
     .catch(err => console.error(err));
